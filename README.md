@@ -20,7 +20,7 @@ Introducción a JavaScript de servidor y a node.js. Sentencias, Variables, Boole
 
 Introducción a JavaScript de servidor y a node.js. Bucles, Clases predefinidas, Objetos, Propiedades y Métodos; Prototipos y Clases; Arrays; JSON; Funciones como Objetos y Cierres (Closures).
 
-### Módulo 3
+### [Módulo 3](https://github.com/ddialar/NodeJS-MiriadaX-Servicios-en-la-nube/tree/master/Mod%203%20-%20Introduccion%20a%20NodeJS)
 
 Modulos node.js; Expresiones Regulares; Eventos, Entorno de Ejecución y Concurrencia en node.js; Ficheros y Flujos.
 
