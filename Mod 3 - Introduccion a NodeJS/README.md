@@ -14,4 +14,4 @@ El programa debe crear un fichero <dest> concatenando los contenidos de <f1> a <
 
 ## Resolución
 
-Archivo [mod_03_p2p_01_ddialar.zip](https://github.com/ddialar/NodeJS-MiriadaX-Servicios-en-la-nube/blob/master/Mod%203%20-%20Introduccion%20a%20NodeJS/mod_03_p2p_01_ddialar/mod_03_p2p_01_ddialar.zip)
+Archivo [mod_03_p2p_01_ddialar](https://github.com/ddialar/NodeJS-MiriadaX-Servicios-en-la-nube/tree/master/Mod%203%20-%20Introduccion%20a%20NodeJS/mod_03_p2p_01_ddialar)
