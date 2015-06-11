@@ -1,0 +1,11 @@
+{
+  "name":"mod_04_p2p_01_ddialar",
+  "version":"1.0.0",
+  "description":"Curso MiriadaX - Desarrollo de servcios en la nube con HTML5, Javascript y NodeJS",
+  "main":"server.js",
+  "author":"Dailos Rafael Díaz Lara <ddialar@gmail.com>",
+  "license":"Creative Commons 4.0",
+  "dependencies": {
+    "express":">=3.2.6"
+  }
+}
