@@ -14,4 +14,4 @@ El evaluador debe comprobar que el URL corresponde al proyecto random (con el nu
 
 ## Resolución
 
-Archivo [mod_05_p2p_01_ddialar/random](https://github.com/ddialar/NodeJS-MiriadaX-Servicios-en-la-nube/tree/master/Mod%205%20-%20Git%20y%20GitHub/mod_05_p2p_01_ddialar/random)
+Archivo [mod_05_p2p_01_ddialar](https://github.com/ddialar/NodeJS-MiriadaX-Servicios-en-la-nube/tree/master/Mod%205%20-%20Git%20y%20GitHub/mod_05_p2p_01_ddialar)
