@@ -21,40 +21,44 @@ app.get('/preguntas', function (req, res) {
 app.get('/respuesta', function (req, res) {
     var resultado = '<html><body>';
 
-    switch (req.query.pregunta) {
-        case 'america':
-            resultado += 'Usted ha indicado que el descubridor de Am&eacute;rica fue:' +
-                         '<h3>' + req.query.respuesta + '</h3>' +
-                         'y su respuesta es: ';
+    try {
+        switch (req.query.pregunta) {
+            case 'america':
+                resultado += 'Usted ha indicado que el descubridor de Am&eacute;rica fue:' +
+                             '<h3>' + req.query.respuesta + '</h3>' +
+                             'y su respuesta es: ';
 
-            if (req.query.respuesta.match(/^crist(ó|o)bal col(ó|o)n$/i) !== null) {
-                resultado += '<h2>Correcta</h2>';
-            } else {
-                resultado += '<strong>Incorrecta</strong> ya que fue <h3>Crist&oacute;bal Col&oacute;n</h3>';
-            }
-            break;
-        case 'portugal':
-            resultado += 'Usted ha indicado que la capital de Portugal es:' +
-                         '<h3>' + req.query.respuesta + '</h3>' +
-                         'y su respuesta es: ';
+                if (req.query.respuesta.match(/^(crist(ó|o)bal )?col(ó|o)n$/i) !== null) {
+                    resultado += '<h2>Correcta</h2>';
+                } else {
+                    resultado += '<strong>Incorrecta</strong> ya que fue <h3>Crist&oacute;bal Col&oacute;n</h3>';
+                }
+                break;
+            case 'portugal':
+                resultado += 'Usted ha indicado que la capital de Portugal es:' +
+                             '<h3>' + req.query.respuesta + '</h3>' +
+                             'y su respuesta es: ';
 
-            if (req.query.respuesta.match(/^lisboa$/i) !== null) {
-                resultado += '<h2>Correcta</h2>';
-            } else {
-                resultado += '<strong>Incorrecta</strong> ya que es <h3>Lisboa</h3>';
-            }
-            break;
-        default:
-            resultado += 'Por favor, use correctamente la aplicaci&oacute;n';
-            break;
+                if (req.query.respuesta.match(/^lisboa$/i) !== null) {
+                    resultado += '<h2>Correcta</h2>';
+                } else {
+                    resultado += '<strong>Incorrecta</strong> ya que es <h3>Lisboa</h3>';
+                }
+                break;
+            default:
+                res.redirect('/preguntas');
+                break;
+        }
+
+        resultado += '<div><button onclick="window.history.back();">Volver</button></div></body></html>';
+
+        res.send(resultado);
+    } catch (e) {
+        res.redirect('/preguntas');
     }
-
-    resultado += '<div><button onclick="window.history.back();">Volver</button></div></body></html>';
-
-    res.send(resultado);
 });
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     res.redirect('/preguntas');
 });
 
